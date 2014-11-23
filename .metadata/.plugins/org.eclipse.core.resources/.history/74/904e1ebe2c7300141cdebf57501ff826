@@ -1,0 +1,9 @@
+package buses
+public
+	bus new_classifier
+	features
+		provide : provides bus access;
+		require : requires bus access;
+	end new_classifier;
+
+end buses;

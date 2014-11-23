@@ -16,7 +16,8 @@ with processes;
 		radar_in : in data port;
 		battery_backup : in data port;
 		disk_out : out data port;
-		mission_control_agv : in event port;
+	weight_in : in data port;
+	mission_control_agv : in event port;
 		motor_signal : out event port;
 		arm_singal : out event port;
 		connection_state : in event port;
@@ -105,6 +106,7 @@ with processes;
 		new_connection42 : port navigation.nav_feedback -> mission_controller.navigation_feedback;
 		new_connection43 : port mission_controller.mission_result -> mission_result_handler.text_results_in;
 		new_connection44 : port connection_state -> mission_result_handler.connection_state;
-	end mission_processing.impl;
+	new_connection45 : port weight_in -> system_controller.weight_in;
+end mission_processing.impl;
 
 end ARR_subsystems;

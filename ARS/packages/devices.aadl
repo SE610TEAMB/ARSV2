@@ -34,6 +34,8 @@ with SEI;
 	device GPS
 	features
 		position_info : out data port;
+		power_bus : requires bus access;
+		data_bus : provides bus access;
 	flows
 		new_flow_spec : flow source position_info;
 	end GPS;
@@ -44,9 +46,10 @@ with SEI;
 	device Sensor
 	features
 		data_out : out data port;
-		new_feature : provides bus access {
+		power_bus : requires bus access {
 			SEI::PowerBudget => 0.2 mW;
 		};
+		data_bus : provides bus access;
 	flows
 		new_flow_spec : flow source data_out;
 	end Sensor;
@@ -61,6 +64,9 @@ with SEI;
 	features
 		feedback_out : out data port;
 		control_in : in event port;
+		data_bus_provide : provides bus access;
+		data_bus_require : requires bus access;
+		power_bus : requires bus access;
 	flows
 		new_flow_spec : flow sink control_in;
 		new_flow_spec2 : flow source feedback_out;
@@ -75,6 +81,8 @@ with SEI;
 	device Battery
 	features
 		battery_info : out data port;
+		data_bus : provides bus access;
+		power_bus : provides bus access;
 	flows
 		new_flow_spec : flow source battery_info;
 	end Battery;
@@ -93,6 +101,9 @@ with SEI;
 		mission_control_acm : out event port;
 		input_output : feature group;
 		connection_states : out event port;
+		data_bus_provide : provides bus access;
+		data_bus_require : requires bus access;
+		power_bus : requires bus access;
 
 	flows
 		new_flow_spec : flow path vehicle_state_amc -> input_output;
@@ -111,6 +122,9 @@ with SEI;
 		vehicle_state_arr : out data port;
 		mission_control_arr : in event port;
 		input_output : feature group;
+		data_bus_provide : provides bus access;
+		data_bus_require : requires bus access;
+		power_bus : requires bus access;
 	flows
 		new_flow_spec : flow path mission_data_arr -> input_output;
 		new_flow_spec2 : flow path mission_control_arr -> input_output;
@@ -133,8 +147,9 @@ with SEI;
 	device Disk
 	features
 		data_in : in data port;
+		power_bus : requires bus access;
+		data_bus : requires bus access;
 	end Disk;
-
 	device implementation Disk.impl
 	end Disk.impl;
 

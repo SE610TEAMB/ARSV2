@@ -1,6 +1,7 @@
 package AGV_subsystems
 public
 with processes;
+with processors;
 	system mission_processing
 	features
 		radar_in : in data port;
@@ -63,11 +64,8 @@ with processes;
 		disk_handler : process processes::disk_handler.impl;
 		motor_handler : process processes::actuator_handler.motor;
 		mission_controler : process processes::mission_controller_agv.impl;
-		
-		ARR_H264_encoder : processor;
-		AGV_CPU : processor;
-		AGV_memory : memory;
-		AGV_bus : bus;
+		CPU : processor processors::system_processor.agv;
+		encoder : processor processors::H264_encoder.agv;
 		state_result_mixer : process processes::state_result_mixer.impl;
 	connections
 		new_connection : port radar_in -> radar_handler.sensor_data;
