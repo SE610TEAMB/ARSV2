@@ -5,7 +5,7 @@
   <children xsi:type="pi:ContainerShape" visible="true" active="true">
     <properties key="independentObject" value="classifier systems::ARRs_Ground.impl"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="2139" height="1131" x="50" y="20" style="//@styles.0/@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
+    <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="1642" height="1131" x="50" y="20" style="//@styles.0/@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
       <properties key="independentObject" value="feature systems::ARRs_Ground.ARR_AGV"/>
       <properties key="side" value="left"/>
@@ -47,7 +47,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.GPS"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="150" height="177" x="946" y="685" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="150" height="177" x="946" y="685" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="150"/>
           <points x="150" y="177"/>
@@ -60,20 +60,20 @@
           <points x="7" y="170"/>
           <points x="143" y="170"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="142" height="169" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="142" height="169" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="150"/>
           <points x="143" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="143" y="170"/>
           <points x="150" y="177"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="177"/>
           <points x="7" y="170"/>
         </graphicsAlgorithmChildren>
@@ -216,7 +216,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.camera"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="163" height="177" x="1162" y="805" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="163" height="177" x="1162" y="805" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="163"/>
           <points x="163" y="177"/>
@@ -229,20 +229,20 @@
           <points x="7" y="170"/>
           <points x="156" y="170"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="155" height="169" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="155" height="169" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="163"/>
           <points x="156" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="156" y="170"/>
           <points x="163" y="177"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="177"/>
           <points x="7" y="170"/>
         </graphicsAlgorithmChildren>
@@ -385,7 +385,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.microphone"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="189" height="171" x="926" y="935" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="189" height="171" x="926" y="935" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="189"/>
           <points x="189" y="171"/>
@@ -398,20 +398,20 @@
           <points x="7" y="164"/>
           <points x="182" y="164"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="181" height="163" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="181" height="163" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="189"/>
           <points x="182" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="182" y="164"/>
           <points x="189" y="171"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="171"/>
           <points x="7" y="164"/>
         </graphicsAlgorithmChildren>
@@ -555,7 +555,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.battery"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="150" height="177" x="911" y="35" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="150" height="177" x="911" y="35" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="150"/>
           <points x="150" y="177"/>
@@ -568,20 +568,20 @@
           <points x="7" y="170"/>
           <points x="143" y="170"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="142" height="169" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="142" height="169" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="150"/>
           <points x="143" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="143" y="170"/>
           <points x="150" y="177"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="177"/>
           <points x="7" y="170"/>
         </graphicsAlgorithmChildren>
@@ -724,7 +724,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.arm"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="160" height="261" x="375" y="705" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="160" height="261" x="375" y="705" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="160"/>
           <points x="160" y="261"/>
@@ -737,20 +737,20 @@
           <points x="7" y="254"/>
           <points x="153" y="254"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="152" height="253" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="152" height="253" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="160"/>
           <points x="153" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="153" y="254"/>
           <points x="160" y="261"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="261"/>
           <points x="7" y="254"/>
         </graphicsAlgorithmChildren>
@@ -976,7 +976,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.motor"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="172" height="271" x="149" y="805" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="172" height="271" x="149" y="805" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="172"/>
           <points x="172" y="271"/>
@@ -989,20 +989,20 @@
           <points x="7" y="264"/>
           <points x="165" y="264"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="164" height="263" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="164" height="263" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="172"/>
           <points x="165" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="165" y="264"/>
           <points x="172" y="271"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="271"/>
           <points x="7" y="264"/>
         </graphicsAlgorithmChildren>
@@ -1228,7 +1228,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.transceiver"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="214" height="279" x="236" y="35" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="214" height="279" x="236" y="35" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="214"/>
           <points x="214" y="279"/>
@@ -1241,20 +1241,20 @@
           <points x="7" y="272"/>
           <points x="207" y="272"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="206" height="271" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="206" height="271" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="214"/>
           <points x="207" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="207" y="272"/>
           <points x="214" y="279"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="279"/>
           <points x="7" y="272"/>
         </graphicsAlgorithmChildren>
@@ -1637,7 +1637,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.radar"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="151" height="177" x="1168" y="555" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="151" height="177" x="1168" y="555" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="151"/>
           <points x="151" y="177"/>
@@ -1650,20 +1650,20 @@
           <points x="7" y="170"/>
           <points x="144" y="170"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="143" height="169" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="143" height="169" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="151"/>
           <points x="144" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="144" y="170"/>
           <points x="151" y="177"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="177"/>
           <points x="7" y="170"/>
         </graphicsAlgorithmChildren>
@@ -1806,7 +1806,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.disk"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="150" height="148" x="345" y="338" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="150" height="148" x="345" y="338" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="150"/>
           <points x="150" y="148"/>
@@ -1819,20 +1819,20 @@
           <points x="7" y="141"/>
           <points x="143" y="141"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="142" height="140" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="142" height="140" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="150"/>
           <points x="143" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="143" y="141"/>
           <points x="150" y="148"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="148"/>
           <points x="7" y="141"/>
         </graphicsAlgorithmChildren>
@@ -1976,7 +1976,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.battery_backup"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="161" height="177" x="1102" y="313" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="161" height="177" x="1102" y="313" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="161"/>
           <points x="161" y="177"/>
@@ -1989,20 +1989,20 @@
           <points x="7" y="170"/>
           <points x="154" y="170"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="153" height="169" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="153" height="169" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="161"/>
           <points x="154" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="154" y="170"/>
           <points x="161" y="177"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="177"/>
           <points x="7" y="170"/>
         </graphicsAlgorithmChildren>
@@ -2841,7 +2841,7 @@
       <properties key="is_layed_out" value="true"/>
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.weight"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="160" height="175" x="155" y="485" style="//@styles.0/@styles.3/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="160" height="175" x="155" y="485" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="160"/>
           <points x="160" y="175"/>
@@ -2854,20 +2854,20 @@
           <points x="7" y="168"/>
           <points x="153" y="168"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="152" height="167" x="4" y="4" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="152" height="167" x="4" y="4" style="//@styles.0/@styles.2/@styles.0"/>
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points/>
           <points x="7" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="160"/>
           <points x="153" y="7"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points x="153" y="168"/>
           <points x="160" y="175"/>
         </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
+        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.2/@styles.0">
           <points y="175"/>
           <points x="7" y="168"/>
         </graphicsAlgorithmChildren>
@@ -3011,7 +3011,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.system_bus"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="162" height="50" x="1380" y="149" style="//@styles.0/@styles.2/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="162" height="50" x="1380" y="149" style="//@styles.0/@styles.3/@styles.0">
         <points y="25"/>
         <points x="20"/>
         <points x="20" y="12"/>
@@ -3031,14 +3031,14 @@
         <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="162" height="20" style="//@styles.1" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="system_bus"/>
       </children>
       <children visible="true">
-        <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="162" height="20" y="14" style="//@styles.1" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="buses::system_bus.agv"/>
+        <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="162" height="20" y="14" style="//@styles.1" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="buses::device_bus.agv"/>
       </children>
     </children>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.media"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="154" height="50" x="1400" y="220" style="//@styles.0/@styles.2/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="154" height="50" x="1400" y="220" style="//@styles.0/@styles.3/@styles.0">
         <points y="25"/>
         <points x="20"/>
         <points x="20" y="12"/>
@@ -3065,7 +3065,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.power_bus"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="156" height="50" x="1399" y="288" style="//@styles.0/@styles.2/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="156" height="50" x="1399" y="288" style="//@styles.0/@styles.3/@styles.0">
         <points y="25"/>
         <points x="20"/>
         <points x="20" y="12"/>
@@ -3094,11 +3094,11 @@
       <styles lineWidth="3" lineStyle="UNSPECIFIED" id="system-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
     </styles>
     <styles background="//@colors.2" lineStyle="UNSPECIFIED" id="feature-group" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
-    <styles lineWidth="2" lineStyle="UNSPECIFIED" id="bus" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
-      <styles lineWidth="3" lineStyle="UNSPECIFIED" id="bus-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
-    </styles>
     <styles lineWidth="2" lineStyle="UNSPECIFIED" id="device" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
       <styles lineWidth="3" lineStyle="UNSPECIFIED" id="device-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+    </styles>
+    <styles lineWidth="2" lineStyle="UNSPECIFIED" id="bus" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
+      <styles lineWidth="3" lineStyle="UNSPECIFIED" id="bus-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
     </styles>
   </styles>
   <styles foreground="//@colors.2" lineStyle="UNSPECIFIED" filled="false" id="label" font="//@fonts.0"/>

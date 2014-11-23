@@ -4073,8 +4073,8 @@
       <properties key="independentObject" value="flow_specification AGV_subsystems::mission_processing.mission_control"/>
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.1" font="//@fonts.1" value="mission_control"/>
     </connectionDecorators>
-    <bendpoints x="716" y="316"/>
-    <bendpoints x="716" y="668"/>
+    <bendpoints x="716" y="318"/>
+    <bendpoints x="716" y="669"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.14/@children.2/@anchors.1" end="//@children.0/@children.14/@children.7/@anchors.1">
     <properties key="independentObject" value="flow_specification AGV_subsystems::mission_processing.mission_data"/>
@@ -4091,8 +4091,8 @@
       <properties key="independentObject" value="flow_specification AGV_subsystems::mission_processing.mission_data"/>
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" y="16" style="//@styles.1" font="//@fonts.1" value="mission_data"/>
     </connectionDecorators>
-    <bendpoints x="648" y="272"/>
-    <bendpoints x="648" y="552"/>
+    <bendpoints x="648" y="274"/>
+    <bendpoints x="648" y="554"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.14/@children.8/@anchors.1" end="//@children.0/@children.14/@children.4/@anchors.1">
     <properties key="independentObject" value="flow_specification AGV_subsystems::mission_processing.new_flow_spec3"/>
@@ -4109,7 +4109,7 @@
       <properties key="independentObject" value="flow_specification AGV_subsystems::mission_processing.new_flow_spec3"/>
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.1" font="//@fonts.1" value="new_flow_spec3"/>
     </connectionDecorators>
-    <bendpoints x="684" y="588"/>
+    <bendpoints x="684" y="589"/>
     <bendpoints x="684" y="224"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.14/@children.9/@anchors.1" end="//@children.0/@children.14/@children.5/@anchors.1">
@@ -4128,7 +4128,7 @@
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.1" font="//@fonts.1" value="new_flow_spec4"/>
     </connectionDecorators>
     <bendpoints x="700" y="624"/>
-    <bendpoints x="700" y="192"/>
+    <bendpoints x="700" y="194"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.14/@children.0/@anchors.1" end="//@children.0/@children.14/@children.0/@anchors.3">
     <properties key="independentObject" value="flow_specification AGV_subsystems::mission_processing.radar_sink"/>

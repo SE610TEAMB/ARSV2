@@ -5,6 +5,8 @@ with threads;
 	features
 		sensor_data : in data port;
 		data_out : out data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path sensor_data -> data_out;
 	end sensor_handler;
@@ -23,6 +25,8 @@ with threads;
 		arr_results : in data port;
 		agv_results : in data port;
 		results : out data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path arr_results -> results;
 		new_flow_spec2 : flow path agv_results -> results;
@@ -36,6 +40,8 @@ with threads;
 		arr_results : in data port;
 		agv_results : in data port;
 		results : out data port;
+		data_bus_provide : provides data access;
+		data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path arr_results -> results;
 		new_flow_spec2 : flow path agv_results -> results;
@@ -50,6 +56,8 @@ with threads;
 		mission_data_out : out data port;
 		mission_control_out : out event port;
 		mission_control_in : in event port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path mission_data_in -> mission_data_out;
 		new_flow_spec2 : flow path mission_control_in -> mission_control_out;
@@ -63,6 +71,8 @@ with threads;
 		main_in : in data port;
 		backup_in : in data port;
 		info_out : out data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path main_in -> info_out;
 		new_flow_spec2 : flow path backup_in -> info_out;
@@ -78,6 +88,8 @@ with threads;
 		vedio_in : in data port;
 		audio_in : in data port;
 		media_out: out data port;
+		encoder_bus_provide : provides data access;
+		encoder_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path vedio_in -> media_out;
 		new_flow_spec2 : flow path audio_in -> media_out;
@@ -95,6 +107,8 @@ with threads;
 		mission_data_out : out data port;
 		mission_control_in : in event port;
 		mission_control_out : out event port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path mission_data_in -> mission_data_out;
 		new_flow_spec2 : flow path mission_control_in -> mission_control_out;
@@ -118,6 +132,8 @@ with threads;
 		actuator_signal : out event port;
 	cmd : in event data port;
 	feedback : out event data port;
+	data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 flows
 	new_flow_spec : flow path cmd -> actuator_signal;
 		new_flow_spec2 : flow path actuator_feedback -> feedback;
@@ -141,6 +157,8 @@ flows
 		nav_feedback : out event data port;
 	motor_cmd : out event data port;
 			motor_feedback : in event data port;
+	data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 flows
 	new_flow_spec : flow path GPS_in -> motor_cmd;
 		new_flow_spec2 : flow path radar_in -> motor_cmd;
@@ -166,6 +184,8 @@ flows
 		door_feedback : in event port;
 		navigation_feedback : in event data port;
 		cmd_door : out event data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow sink mission_control;
 		new_fow_spec2 : flow sink mission_data;
@@ -185,6 +205,8 @@ flows
 		navigation_feedback : in event data port;
 		identification_feedback : in event data port;
 		operation_feedback : in event data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow sink mission_cotrol;
 		new_flow_spec2 : flow sink mission_data;
@@ -211,6 +233,10 @@ flows
 	media_streaming_in : in data port;
 		streaming_states : in out event port;
 		connection_state : in event port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
+	encoder_bus_provide : provides data access;
+	encoder_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path text_results_in -> mission_results;
 	new_flow_spec2 : flow path media_streaming_in -> mission_results;
@@ -223,6 +249,8 @@ end mission_result_handler;
 	features
 		state_result_in : in data port;
 		state_result_out : out data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	end state_result_handler;
 
 	process implementation state_result_handler.impl
@@ -233,6 +261,8 @@ end mission_result_handler;
 		media_in : in data port;
 	data_out : out data port;
 	local_recording : in out event port;
+	data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	end disk_handler;
 
 	process implementation disk_handler.impl
@@ -246,6 +276,8 @@ end mission_result_handler;
 		state_result_out : out data port;
 		streaming_states : in out event port;
 		local_recording : in out event port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	end system_controller;
 
 	process implementation system_controller.impl
@@ -267,6 +299,10 @@ end mission_result_handler;
 	mission_in : in data port;
 	identification_control : in event port;
 	identification_feedback : out event data port;
+	data_bus_provide : provides data access;
+	data_bus_require : requires data access;
+	encoder_bus_provide : provides data access;
+	encoder_bus_require : requires data access;
 flows
 	new_flow_spec : flow sink media_in;
 		new_flow_spec3 : flow sink identification_control;
@@ -283,6 +319,8 @@ flows
 		arm_feedback : in event data port;
 		arm_cmd : out event data port;
 		operation_feedback : out event data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow sink mission_data_in;
 	end target_operation;
