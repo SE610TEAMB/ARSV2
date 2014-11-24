@@ -976,7 +976,7 @@
       <properties key="independentObject" value="subcomponent systems::ARRs_Ground.impl.motor"/>
       <properties key="is_layed_out" value="true"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="172" height="271" x="149" y="805" style="//@styles.0/@styles.2/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="172" height="271" x="130" y="790" style="//@styles.0/@styles.2/@styles.0">
         <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
           <points x="172"/>
           <points x="172" y="271"/>

@@ -4776,8 +4776,9 @@
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature processes::disk_handler.media_in"/>
         <properties key="is_ghost" value="false"/>
+        <properties key="side" value="left"/>
         <properties key="layout_side" value="left"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="55" height="24" y="45"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="55" height="24" y="80"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
@@ -4854,10 +4855,10 @@
       </children>
       <children xsi:type="pi:ContainerShape" visible="true" active="true">
         <properties key="independentObject" value="feature processes::disk_handler.local_recording"/>
-        <properties key="side" value="left"/>
         <properties key="is_ghost" value="false"/>
+        <properties key="side" value="left"/>
         <properties key="layout_side" value="left"/>
-        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="90" height="34" y="80"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="90" height="34" y="38"/>
         <anchors xsi:type="pi:ChopboxAnchor">
           <properties key="name" value="chopbox"/>
         </anchors>
@@ -5096,7 +5097,7 @@
       <properties key="is_layed_out" value="true"/>
       <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.system_memory"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="208" height="50" x="760" y="1280">
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="208" height="50" x="760" y="1261">
         <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="208" height="20" y="30" style="//@styles.0/@styles.3/@styles.0"/>
         <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="208" height="20" style="//@styles.0/@styles.3/@styles.0"/>
         <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" lineVisible="false" width="208" height="20" y="20" style="//@styles.0/@styles.3/@styles.0"/>
@@ -5124,7 +5125,7 @@
       <properties key="is_layed_out" value="true"/>
       <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.encoder_bus"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="194" height="50" x="1110" y="1290" style="//@styles.0/@styles.4/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="194" height="50" x="1097" y="1260" style="//@styles.0/@styles.4/@styles.0">
         <points y="25"/>
         <points x="20"/>
         <points x="20" y="12"/>
@@ -5151,7 +5152,7 @@
       <properties key="is_layed_out" value="true"/>
       <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.system_bus"/>
       <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="159" height="50" x="1380" y="1290" style="//@styles.0/@styles.4/@styles.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="159" height="50" x="1340" y="1250" style="//@styles.0/@styles.4/@styles.0">
         <points y="25"/>
         <points x="20"/>
         <points x="20" y="12"/>
@@ -5960,8 +5961,8 @@
       <properties key="independentObject" value="connection ARR_subsystems::mission_processing.impl.new_connection27"/>
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.2" font="//@fonts.1" value="new_connection27"/>
     </connectionDecorators>
-    <bendpoints x="2007" y="969"/>
-    <bendpoints x="2007" y="1102"/>
+    <bendpoints x="1932" y="969"/>
+    <bendpoints x="1932" y="1102"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.22/@children.3/@anchors.2" end="//@children.0/@children.14/@anchors.1">
     <properties key="independentObject" value="connection ARR_subsystems::mission_processing.impl.new_connection28"/>
@@ -5971,8 +5972,8 @@
       <properties key="independentObject" value="connection ARR_subsystems::mission_processing.impl.new_connection28"/>
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.2" font="//@fonts.1" value="new_connection28"/>
     </connectionDecorators>
-    <bendpoints x="1982" y="1038"/>
-    <bendpoints x="1982" y="930"/>
+    <bendpoints x="1910" y="1038"/>
+    <bendpoints x="1910" y="930"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.21/@children.3/@anchors.2" end="//@children.0/@children.13/@anchors.1">
     <properties key="independentObject" value="connection ARR_subsystems::mission_processing.impl.new_connection29"/>
@@ -6042,7 +6043,7 @@
     <bendpoints x="598" y="820"/>
     <bendpoints x="598" y="908"/>
     <bendpoints x="1317" y="908"/>
-    <bendpoints x="1317" y="566"/>
+    <bendpoints x="1317" y="601"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@children.27/@children.2/@anchors.2" end="//@children.0/@children.22/@children.1/@anchors.2">
     <properties key="independentObject" value="connection ARR_subsystems::mission_processing.impl.new_connection35"/>
@@ -6162,8 +6163,12 @@
       <properties key="independentObject" value="connection ARR_subsystems::mission_processing.impl.new_connection45"/>
       <graphicsAlgorithm xsi:type="al:Text" lineWidth="1" filled="false" transparency="0.0" x="5" y="10" style="//@styles.2" font="//@fonts.1" value="new_connection45"/>
     </connectionDecorators>
-    <bendpoints x="235" y="382"/>
-    <bendpoints x="235" y="408"/>
+    <bendpoints x="189" y="382"/>
+    <bendpoints x="189" y="408"/>
+    <bendpoints x="517" y="408"/>
+    <bendpoints x="517" y="430"/>
+    <bendpoints x="854" y="430"/>
+    <bendpoints x="854" y="408"/>
   </connections>
   <colors red="227" green="238" blue="249"/>
   <colors red="255" green="255" blue="255"/>

@@ -1,33 +1,65 @@
 package threads
 public
 	thread control_navigation
+	features
+		mission_data : in data port;
+		mission_result : out data port;
+		mission_cotrol : in event port;
+		navigation_control : out event port;
+		navigation_feedback : in event data port;
+		data_bus_provide : provides data access;
+		data_bus_require : requires data access;
 	end control_navigation;
 
 	thread control_identification
+	features
+		mission_data : in data port;
+		mission_result : out data port;
+		mission_cotrol : in event port;
+		identification_control : out event port;
+		identification_feedback : in event data port;
+		data_bus_provide : provides data access;
+		data_bus_require : requires data access;
 	end control_identification;
 
-	thread control_operate
-	end control_operate;
+	thread control_operation
+	features
+		mission_data : in data port;
+		mission_result : out data port;
+		mission_cotrol : in event port;
+		operation_control : out event port;
+		operation_feedback : in event data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
+	end control_operation;
 
 	thread implementation control_navigation.impl
+	
 	end control_navigation.impl;
 
 	thread implementation control_identification.impl
 	end control_identification.impl;
 
-	thread implementation control_operate.impl
-	end control_operate.impl;
+	thread implementation control_operation.impl
+	end control_operation.impl;
 
 	thread sensor_GPS
+		features
+			data_in : in data port;
+			data_out : out data port;
 	end sensor_GPS;
 
 	thread implementation sensor_GPS.impl
 	end sensor_GPS.impl;
 
 	thread sensor_radar
+	features
+			data_in : in data port;
+			data_out : out data port;
 	end sensor_radar;
 
 	thread implementation sensor_radar.impl
+	
 	end sensor_radar.impl;
 
 	thread media_audio
@@ -43,18 +75,36 @@ public
 	end media_video.impl;
 
 	thread battery_dual
+	features
+		main_in : in data port;
+		backup_in : in data port;
+		info_out : out data port;
+		data_bus_provide : provides data access;
+	data_bus_require : requires data access;
 	end battery_dual;
 
 	thread implementation battery_dual.impl
 	end battery_dual.impl;
 
 	thread mission_queue_management
+	features
+		queue : in out data port;
 	end mission_queue_management;
 
 	thread mission_receive
+		features
+		queue : out data port;
+		mission_data_in : in data port;
+		mission_control_in : in event port;
+		data_bus_require : requires data access;
 	end mission_receive;
 
 	thread mission_forward
+		features
+		queue : in data port;
+		mission_data_out : out data port;
+		mission_control_out : out event port;
+		data_bus_provide : provides data access;
 	end mission_forward;
 
 	thread implementation mission_receive.impl
@@ -84,28 +134,38 @@ public
 	thread implementation state_stream.impl
 	end state_stream.impl;
 
-	thread navigation_receive
-	end navigation_receive;
 
 	thread navigation_calculate
+	features
+			GPS_in : in data port;
+			radar_in : in data port;
+			mission_position : in data port;
+			nav_control : in event port;
+			nav_feedback : out event data port;
+			motor_feedback : in event data port;
+			direction : out data port;
+			speed : out data port;
+			data_bus_provide : provides data access;
+			data_bus_require : requires data access;
 	end navigation_calculate;
 
 	thread navigation_drive
+	features
+			direction : in data port;
+			speed : in data port;
+			nav_control : in event port;
+			nav_feedback : out event data port;
+			motor_cmd : out event data port;
+			data_bus_provide : provides data access;
+			data_bus_require : requires data access;
 	end navigation_drive;
 
-	thread navigation_feedback
-	end navigation_feedback;
 
 	thread implementation navigation_calculate.impl
 	end navigation_calculate.impl;
 
-	thread implementation navigation_receive.impl
-	end navigation_receive.impl;
 
 	thread implementation navigation_drive.impl
 	end navigation_drive.impl;
-
-	thread implementation navigation_feedback.impl
-	end navigation_feedback.impl;
 
 end threads;

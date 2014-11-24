@@ -13,12 +13,18 @@ with threads;
 	process implementation sensor_handler.GPS
 	subcomponents
 		sensor_GPS : thread threads::sensor_GPS.impl;
-	end sensor_handler.GPS;
+connections
+	new_connection : port sensor_data -> sensor_GPS.data_in;
+	new_connection2 : port sensor_GPS.data_out -> data_out;
+end sensor_handler.GPS;
 
 	process implementation sensor_handler.radar
 	subcomponents
 		radar : thread threads::sensor_radar.impl;
-	end sensor_handler.radar;
+connections
+	new_connection : port sensor_data -> radar.data_in;
+	new_connection2 : port radar.data_out -> data_out;
+end sensor_handler.radar;
 	
    process mission_result_mixer
 	features
@@ -72,7 +78,7 @@ with threads;
 		backup_in : in data port;
 		info_out : out data port;
 		data_bus_provide : provides data access;
-	data_bus_require : requires data access;
+		data_bus_require : requires data access;
 	flows
 		new_flow_spec : flow path main_in -> info_out;
 		new_flow_spec2 : flow path backup_in -> info_out;
@@ -81,7 +87,11 @@ with threads;
 	process implementation battery_handler.impl
 	subcomponents
 		battery : thread threads::battery_dual.impl;
-	end battery_handler.impl;
+connections
+	new_connection : port main_in -> battery.main_in;
+	new_connection2 : port backup_in -> battery.backup_in;
+	new_connection3 : port battery.info_out -> info_out;
+end battery_handler.impl;
 	
 	process media_handler
 	features
@@ -120,8 +130,17 @@ with threads;
 		receive : thread threads::mission_receive.impl;
 		queue_management : thread threads::mission_queue_management.impl;
 		forward : thread threads::mission_forward.impl;
-	modes
-		rec : mode;
+connections
+	new_connection : port mission_queue -> queue_management.queue;
+	new_connection2 : port queue_management.queue -> mission_queue;
+	new_connection3 : port receive.queue -> mission_queue;
+	new_connection4 : port mission_queue -> forward.queue;
+	new_connection5 : port mission_data_in -> receive.mission_data_in;
+	new_connection6 : port mission_control_in -> receive.mission_control_in;
+	new_connection7 : port forward.mission_data_out -> mission_data_out;
+	new_connection8 : port forward.mission_control_out -> mission_control_out;
+modes
+	rec : mode;
 		que : mode;
 		for : mode;
 	end mission_handler.impl;
@@ -153,12 +172,12 @@ flows
 		GPS_in : in data port;
 		radar_in : in data port;
 		mission_position : in data port;
-	nav_control : in event port;
+		nav_control : in event port;
 		nav_feedback : out event data port;
-	motor_cmd : out event data port;
-			motor_feedback : in event data port;
-	data_bus_provide : provides data access;
-	data_bus_require : requires data access;
+		motor_cmd : out event data port;
+		motor_feedback : in event data port;
+		data_bus_provide : provides data access;
+		data_bus_require : requires data access;
 flows
 	new_flow_spec : flow path GPS_in -> motor_cmd;
 		new_flow_spec2 : flow path radar_in -> motor_cmd;
@@ -169,11 +188,21 @@ flows
 
 	process implementation navigation.impl
 	subcomponents
-		receive : thread threads::navigation_receive.impl;
 		calculate : thread threads::navigation_calculate.impl;
 		drive : thread threads::navigation_drive.impl;
-		feedback : thread threads::navigation_feedback.impl;
-	end navigation.impl;
+connections
+	new_connection : port GPS_in -> calculate.GPS_in;
+	new_connection2 : port radar_in -> calculate.radar_in;
+	new_connection3 : port mission_position -> calculate.mission_position;
+	new_connection4 : port nav_control -> calculate.nav_control;
+	new_connection5 : port motor_feedback -> calculate.motor_feedback;
+	new_connection6 : port calculate.nav_feedback -> nav_feedback;
+	new_connection7 : port calculate.speed -> drive.speed;
+	new_connection8 : port calculate.direction -> drive.direction;
+	new_connection9 : port drive.motor_cmd -> motor_cmd;
+	new_connection10 : port drive.nav_feedback -> nav_feedback;
+	new_connection11 : port nav_control -> drive.nav_control;
+end navigation.impl;
 
 	process mission_controller_agv
 	features
@@ -218,9 +247,26 @@ flows
 	subcomponents
 		identification : thread threads::control_identification.impl;
 		navigation : thread threads::control_navigation.impl;
-		operation : thread threads::control_operate.impl;
-	modes
-		nav : mode;
+		operation : thread threads::control_operation.impl;
+		new_subcomponent : data;
+connections
+	new_connection : port mission_data -> navigation.mission_data;
+	new_connection2 : port mission_cotrol -> navigation.mission_cotrol;
+	new_connection3 : port mission_data -> identification.mission_data;
+	new_connection4 : port mission_cotrol -> identification.mission_cotrol;
+	new_connection5 : port mission_data -> operation.mission_data;
+	new_connection6 : port mission_cotrol -> operation.mission_cotrol;
+	new_connection7 : port navigation_feedback -> navigation.navigation_feedback;
+	new_connection8 : port navigation.navigation_control -> navigation_control;
+	new_connection9 : port identification_feedback -> identification.identification_feedback;
+	new_connection10 : port identification.identification_control -> identification_control;
+	new_connection11 : port operation_feedback -> operation.operation_feedback;
+	new_connection12 : port operation.operation_control -> operation_control;
+	new_connection13 : port navigation.mission_result -> mission_result;
+	new_connection14 : port identification.mission_result -> mission_result;
+	new_connection15 : port operation.mission_result -> mission_result;
+modes
+	nav : mode;
 		ide : mode;
 		ope : mode;
 		idle : initial mode;
