@@ -12,9 +12,7 @@ public
 	memory media_memory
 	end media_memory;
 
-	memory implementation media_memory.arr
-	end media_memory.arr;
-	
-	memory implementation media_memory.agv
-	end media_memory.agv;
+	memory implementation media_memory.impl
+	end media_memory.impl;
+
 end memories;

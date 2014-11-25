@@ -65,9 +65,8 @@ with SEI;
 		system_controller : process processes::system_controller.impl;
 		state_result_handler : process processes::state_result_handler.impl;
 		disk_handler : process processes::disk_handler.impl;
-	media_memory : memory memories::media_memory.arr;
-connections
-	new_connection : port radar_in -> radar_handler.sensor_data;
+	connections
+		new_connection : port radar_in -> radar_handler.sensor_data;
 		new_connection2 : port GPS_in -> GPS_handler.sensor_data;
 		new_connection3 : port battery_in -> battery_handler.main_in;
 		new_connection4 : port battery_backup -> battery_handler.backup_in;
@@ -113,76 +112,17 @@ connections
 		new_connection44 : port connection_state -> mission_result_handler.connection_state;
 	new_connection45 : port weight_in -> system_controller.weight_in;
 	  properties
-	SEI::MIPSCapacity => 30.0 MIPS applies to CPU;
-	SEI::RAMCapacity => 256.0 MByte applies to system_memory;
-	SEI::RAMCapacity => 512.0 MByte applies to media_memory;
-	SEI::MIPSCapacity => 30.0 MIPS applies to encoder;
+	SEI::MIPSCapacity => 5.0 MIPS applies to CPU;
+	SEI::RAMCapacity => 1.5 MByte applies to system_memory;
+	SEI::MIPSCapacity => 3.0 MIPS applies to encoder;
 	
-   	SEI::MIPSBudget => 2.0 MIPS applies to mission_controller;
-   	SEI::RAMBudget =>  2.0 MByte applies to mission_controller;
-   	SEI::MIPSBudget => 0.1 MIPS applies to battery_handler;
-   	SEI::RAMBudget =>  0.5 MByte applies to battery_handler;
-	SEI::MIPSBudget => 0.1 MIPS applies to GPS_handler;
-   	SEI::RAMBudget =>  0.5 MByte applies to GPS_handler;
-	SEI::MIPSBudget => 5.0 MIPS applies to navigation;
-   	SEI::RAMBudget =>  5.0 MByte applies to navigation;
-	SEI::MIPSBudget => 0.1 MIPS applies to motor_handler;
-   	SEI::RAMBudget =>  0.5 MByte applies to motor_handler;
-	SEI::MIPSBudget => 0.1 MIPS applies to arm_handler;
-   	SEI::RAMBudget =>  0.5 MByte applies to arm_handler;
-	SEI::MIPSBudget => 0.1 MIPS applies to radar_handler;
-   	SEI::RAMBudget =>  0.5 MByte applies to radar_handler;
-	SEI::MIPSBudget => 2.0 MIPS applies to mission_handler;
-   	SEI::RAMBudget =>  3.0 MByte applies to mission_handler;
-	SEI::MIPSBudget => 2.0 MIPS applies to target_operation;
-   	SEI::RAMBudget =>  2.5 MByte applies to target_operation;
-	SEI::MIPSBudget => 5.0 MIPS applies to system_controller;
-   	SEI::RAMBudget =>  10.0 MByte applies to system_controller;
-	SEI::MIPSBudget => 2.0 MIPS applies to state_result_handler;
-   	SEI::RAMBudget =>  5.0 MByte applies to state_result_handler;
-	SEI::MIPSBudget => 1.0 MIPS applies to disk_handler;
-   	SEI::RAMBudget =>  2.0 MByte applies to disk_handler;
-   	
-   	SEI::MIPSBudget => 10.0 MIPS applies to media_handler;
-   	SEI::RAMBudget =>  50.0 MByte applies to media_handler;
-	SEI::MIPSBudget => 5.0 MIPS applies to mission_result_handler;
-   	SEI::RAMBudget =>  20.0 MByte applies to mission_result_handler;
-	SEI::MIPSBudget => 7.0 MIPS applies to target_identification;
-   	SEI::RAMBudget =>  10.0 MByte applies to target_identification;
+
 	
 	
    	Actual_Processor_Binding =>  (reference (CPU)) applies to mission_controller;
    	Actual_Memory_Binding =>  (reference (system_memory)) applies to mission_controller;
-   	Actual_Processor_Binding =>  (reference (CPU)) applies to battery_handler;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to battery_handler;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to GPS_handler;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to GPS_handler;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to navigation;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to navigation;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to motor_handler;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to motor_handler;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to arm_handler;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to arm_handler;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to radar_handler;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to radar_handler;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to mission_handler;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to mission_handler;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to target_operation;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to target_operation;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to system_controller;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to system_controller;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to state_result_handler;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to state_result_handler;
-	Actual_Processor_Binding =>  (reference (CPU)) applies to disk_handler;
-   	Actual_Memory_Binding =>  (reference (system_memory)) applies to disk_handler;
-   	
-   	Actual_Processor_Binding =>  (reference (encoder)) applies to media_handler;
-   	Actual_Memory_Binding =>  (reference (media_memory)) applies to media_handler;
-	Actual_Processor_Binding =>  (reference (encoder)) applies to mission_result_handler;
-   	Actual_Memory_Binding =>  (reference (media_memory)) applies to mission_result_handler;
-	Actual_Processor_Binding =>  (reference (encoder)) applies to target_identification;
-   	Actual_Memory_Binding =>  (reference (media_memory)) applies to target_identification;
-   	
+   	Actual_Processor_Binding =>  (reference (CPU)) applies to mission_controller;
+   	Actual_Memory_Binding =>  (reference (system_memory)) applies to mission_controller;
    	
 end mission_processing.impl;
 

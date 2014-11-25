@@ -14,7 +14,5 @@ public
 
 	memory implementation media_memory.arr
 	end media_memory.arr;
-	
-	memory implementation media_memory.agv
-	end media_memory.agv;
+
 end memories;

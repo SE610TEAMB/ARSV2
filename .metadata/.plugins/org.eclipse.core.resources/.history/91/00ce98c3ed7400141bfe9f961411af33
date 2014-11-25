@@ -3681,8 +3681,8 @@
       </children>
     </children>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.new_subcomponent"/>
       <properties key="is_layed_out" value="true"/>
-      <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.media_memory"/>
       <properties key="is_ghost" value="false"/>
       <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="200" height="50" x="1040" y="1261">
         <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="200" height="20" y="30" style="//@styles.0/@styles.3/@styles.0"/>
@@ -3701,8 +3701,8 @@
         <properties key="name" value="chopbox"/>
       </anchors>
       <children visible="true">
-        <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.media_memory"/>
-        <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="200" height="20" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="media_memory"/>
+        <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.new_subcomponent"/>
+        <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="200" height="20" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="new_subcomponent"/>
       </children>
       <children visible="true">
         <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="200" height="20" y="14" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="memories::media_memory.arr"/>

@@ -3680,34 +3680,6 @@
         <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="208" height="20" y="14" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="memories::system_memory.arr"/>
       </children>
     </children>
-    <children xsi:type="pi:ContainerShape" visible="true" active="true">
-      <properties key="is_layed_out" value="true"/>
-      <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.media_memory"/>
-      <properties key="is_ghost" value="false"/>
-      <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="200" height="50" x="1040" y="1261">
-        <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="200" height="20" y="30" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="200" height="20" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" lineVisible="false" width="200" height="20" y="20" style="//@styles.0/@styles.3/@styles.0"/>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
-          <points y="10"/>
-          <points y="40"/>
-        </graphicsAlgorithmChildren>
-        <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.0/@styles.3/@styles.0">
-          <points x="198" y="10"/>
-          <points x="198" y="40"/>
-        </graphicsAlgorithmChildren>
-      </graphicsAlgorithm>
-      <anchors xsi:type="pi:ChopboxAnchor">
-        <properties key="name" value="chopbox"/>
-      </anchors>
-      <children visible="true">
-        <properties key="independentObject" value="subcomponent ARR_subsystems::mission_processing.impl.media_memory"/>
-        <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="200" height="20" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="media_memory"/>
-      </children>
-      <children visible="true">
-        <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="200" height="20" y="14" style="//@styles.2" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="memories::media_memory.arr"/>
-      </children>
-    </children>
   </children>
   <styles background="//@colors.1" foreground="//@colors.2" lineWidth="1" lineVisible="true" transparency="0.0" id="classifier" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
     <styles lineWidth="2" lineStyle="UNSPECIFIED" id="system" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
