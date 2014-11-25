@@ -38,6 +38,9 @@ with buses;
 		new_flow_spec12 : flow sink microphone_in;
 		new_flow_spec13 : flow sink battery_in;
 		new_flow_spec14 : flow sink connection_state;
+		new_flow_spec15 : flow sink weight_in;
+		new_flow_spec16 : flow source disk_out;
+		new_flow_spec17 : flow sink battery_backup;
 	end mission_processing;
 
 	system implementation mission_processing.impl
@@ -50,7 +53,6 @@ with buses;
 		CPU : processor processors::system_processor.arr;
 		encoder : processor processors::H264_encoder.arr;
 		system_memory : memory memories::system_memory.arr;
-		encoder_bus : bus buses::H264_encoder_bus.arr;
 		motor_handler : process processes::actuator_handler.motor;
 		arm_handler : process processes::actuator_handler.arm;
 		mission_result_handler : process processes::mission_result_handler.impl;
@@ -62,7 +64,6 @@ with buses;
 		system_controller : process processes::system_controller.impl;
 		state_result_handler : process processes::state_result_handler.impl;
 		disk_handler : process processes::disk_handler.impl;
-		system_bus : bus buses::system_bus.arr;
 	connections
 		new_connection : port radar_in -> radar_handler.sensor_data;
 		new_connection2 : port GPS_in -> GPS_handler.sensor_data;

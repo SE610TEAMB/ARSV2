@@ -27,22 +27,13 @@ public
 	bus implementation device_bus.agv
 	end device_bus.agv;
 
-	bus system_bus
-	end system_bus;
+	bus network
+	end network;
 
-	bus implementation system_bus.arr
-	end system_bus.arr;
+	bus implementation network.amc
+	end network.amc;
 
-	bus implementation system_bus.agv
-	end system_bus.agv;
-
-	bus H264_encoder_bus
-	end H264_encoder_bus;
-
-	bus implementation H264_encoder_bus.arr
-	end H264_encoder_bus.arr;
-
-	bus implementation H264_encoder_bus.agv
-	end H264_encoder_bus.agv;
+	bus implementation network.agv
+	end network.agv;
 
 end buses;

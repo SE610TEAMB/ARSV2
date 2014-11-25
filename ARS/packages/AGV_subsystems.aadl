@@ -43,7 +43,9 @@ with buses;
 		battery_backup_status : flow sink battery_backup;
 		weight_loaded_in : flow sink weight_in; 
 		camera_source : flow sink camera_in; 
-		microphone_source : flow sink microphone_in; 
+		microphone_source : flow sink microphone_in;
+		new_flow_spec : flow source data_out_disk;
+		new_flow_spec2 : flow sink connection_state;
 	end mission_processing;
 
 	system implementation mission_processing.impl
@@ -70,8 +72,7 @@ with buses;
 		encoder : processor processors::H264_encoder.agv;
 		state_result_mixer : process processes::state_result_mixer.impl;
 		system_memory : memory memories::system_memory.agv;
-		new_subcomponent : bus buses::H264_encoder_bus.agv;
-		new_subcomponent2 : bus buses::system_bus.agv;
+	space_hoder : data;
 	connections
 		new_connection : port radar_in -> radar_handler.sensor_data;
 		new_connection2 : port GPS_in -> GPS_handler.sensor_data;

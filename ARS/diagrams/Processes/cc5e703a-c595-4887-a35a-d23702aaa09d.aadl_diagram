@@ -6,7 +6,7 @@
     <properties key="independentObject" value="classifier processes::mission_result_handler"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="162" height="50" x="-837" y="80" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="162" height="50" x="-640" y="620" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="162"/>
       <points x="142" y="50"/>
@@ -24,7 +24,7 @@
     <properties key="independentObject" value="classifier processes::target_operation"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="122" height="50" x="-620" y="80" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="122" height="50" x="-427" y="630" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="122"/>
       <points x="102" y="50"/>
@@ -60,7 +60,7 @@
     <properties key="independentObject" value="classifier processes::target_operation.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="149" height="50" x="-631" y="220" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="149" height="50" x="-414" y="730" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="149"/>
       <points x="129" y="50"/>
@@ -78,7 +78,7 @@
     <properties key="independentObject" value="classifier processes::state_result_handler.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="172" height="50" x="1070" y="580" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="172" height="50" x="912" y="620" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="172"/>
       <points x="152" y="50"/>
@@ -114,7 +114,7 @@
     <properties key="independentObject" value="classifier processes::mission_controller_agv"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="160" height="50" x="730" y="350" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="160" height="50" x="460" y="460" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="160"/>
       <points x="140" y="50"/>
@@ -132,7 +132,7 @@
     <properties key="independentObject" value="classifier processes::state_result_mixer"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="135" height="50" x="99" y="410" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="135" height="50" x="87" y="470" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="135"/>
       <points x="115" y="50"/>
@@ -150,7 +150,7 @@
     <properties key="independentObject" value="classifier processes::mission_controller_agv.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="187" height="50" x="671" y="570" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="187" height="50" x="390" y="610" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="187"/>
       <points x="167" y="50"/>
@@ -168,7 +168,7 @@
     <properties key="independentObject" value="classifier processes::navigation.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="113" height="50" x="-976" y="220" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="113" height="50" x="-233" y="260" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="113"/>
       <points x="93" y="50"/>
@@ -186,7 +186,7 @@
     <properties key="independentObject" value="classifier processes::media_handler"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="112" height="50" x="937" y="340" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="112" height="50" x="670" y="460" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="112"/>
       <points x="92" y="50"/>
@@ -204,7 +204,7 @@
     <properties key="independentObject" value="classifier processes::sensor_handler"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="118" height="50" x="973" y="70" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="118" height="50" x="682" y="110" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="118"/>
       <points x="98" y="50"/>
@@ -222,7 +222,7 @@
     <properties key="independentObject" value="classifier processes::disk_handler"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="102" height="50" x="724" y="116" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="102" height="50" x="261" y="460" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="102"/>
       <points x="82" y="50"/>
@@ -240,7 +240,7 @@
     <properties key="independentObject" value="classifier processes::battery_handler.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="144" height="50" x="419" y="232" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="144" height="50" x="323" y="232" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="144"/>
       <points x="124" y="50"/>
@@ -258,7 +258,7 @@
     <properties key="independentObject" value="classifier processes::mission_result_handler.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="189" height="50" x="-850" y="220" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="189" height="50" x="-664" y="720" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="189"/>
       <points x="169" y="50"/>
@@ -276,7 +276,7 @@
     <properties key="independentObject" value="classifier processes::disk_handler.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="129" height="50" x="711" y="260" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="129" height="50" x="222" y="640" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="129"/>
       <points x="109" y="50"/>
@@ -294,7 +294,7 @@
     <properties key="independentObject" value="classifier processes::mission_result_mixer"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="152" height="50" x="-260" y="610" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="152" height="50" x="-120" y="460" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="152"/>
       <points x="132" y="50"/>
@@ -312,7 +312,7 @@
     <properties key="independentObject" value="classifier processes::battery_handler"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="117" height="50" x="547" y="116" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="117" height="50" x="363" y="110" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="117"/>
       <points x="97" y="50"/>
@@ -330,7 +330,7 @@
     <properties key="independentObject" value="classifier processes::mission_splitter"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="121" height="50" x="1330" y="350" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="121" height="50" x="1170" y="460" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="121"/>
       <points x="101" y="50"/>
@@ -348,7 +348,7 @@
     <properties key="independentObject" value="classifier processes::mission_handler.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="150" height="50" x="156" y="300" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="150" height="50" x="150" y="260" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="150"/>
       <points x="130" y="50"/>
@@ -366,7 +366,7 @@
     <properties key="independentObject" value="classifier processes::mission_splitter.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="148" height="50" x="1265" y="600" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="148" height="50" x="1135" y="610" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="148"/>
       <points x="128" y="50"/>
@@ -384,7 +384,7 @@
     <properties key="independentObject" value="classifier processes::system_controller"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="132" height="50" x="539" y="350" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="132" height="50" x="507" y="110" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="132"/>
       <points x="112" y="50"/>
@@ -402,7 +402,7 @@
     <properties key="independentObject" value="classifier processes::mission_result_mixer.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="179" height="50" x="-260" y="730" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="179" height="50" x="-169" y="640" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="179"/>
       <points x="159" y="50"/>
@@ -420,7 +420,7 @@
     <properties key="independentObject" value="classifier processes::system_controller.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="159" height="50" x="480" y="550" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="159" height="50" x="480" y="250" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="159"/>
       <points x="139" y="50"/>
@@ -438,7 +438,7 @@
     <properties key="independentObject" value="classifier processes::navigation"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="100" height="50" x="-970" y="80" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="100" height="50" x="-160" y="110" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="100"/>
       <points x="80" y="50"/>
@@ -474,7 +474,7 @@
     <properties key="independentObject" value="classifier processes::media_handler.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="139" height="50" x="910" y="570" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="139" height="50" x="643" y="620" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="139"/>
       <points x="119" y="50"/>
@@ -492,7 +492,7 @@
     <properties key="independentObject" value="classifier processes::mission_controller_arr"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="157" height="50" x="330" y="410" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="157" height="50" x="10" y="110" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="157"/>
       <points x="137" y="50"/>
@@ -546,7 +546,7 @@
     <properties key="independentObject" value="classifier processes::state_result_handler"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="145" height="50" x="1070" y="360" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="145" height="50" x="990" y="460" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="145"/>
       <points x="125" y="50"/>
@@ -582,7 +582,7 @@
     <properties key="independentObject" value="classifier processes::mission_controller_arr.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="184" height="50" x="270" y="550" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="184" height="50" x="-30" y="250" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="184"/>
       <points x="164" y="50"/>
@@ -600,7 +600,7 @@
     <properties key="independentObject" value="classifier processes::state_result_mixer.impl"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="162" height="50" x="20" y="540" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="162" height="50" x="60" y="620" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="162"/>
       <points x="142" y="50"/>
@@ -618,7 +618,7 @@
     <properties key="independentObject" value="classifier processes::sensor_handler.radar"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="150" height="50" x="1010" y="270" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="150" height="50" x="850" y="240" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="150"/>
       <points x="130" y="50"/>
@@ -636,7 +636,7 @@
     <properties key="independentObject" value="classifier processes::sensor_handler.GPS"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="143" height="50" x="1200" y="80" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="143" height="50" x="927" y="116" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="143"/>
       <points x="123" y="50"/>
@@ -654,7 +654,7 @@
     <properties key="independentObject" value="classifier processes::actuator_handler"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="123" height="50" x="-710" y="310" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="123" height="50" x="-580" y="430" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="123"/>
       <points x="103" y="50"/>
@@ -672,7 +672,7 @@
     <properties key="independentObject" value="classifier processes::sensor_handler.weight"/>
     <properties key="is_layed_out" value="true"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="159" height="50" x="1150" y="232" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="159" height="50" x="800" y="470" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
       <points x="159"/>
       <points x="139" y="50"/>

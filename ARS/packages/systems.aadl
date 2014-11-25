@@ -18,6 +18,9 @@ with SEI;
 features
 		AGV_AMC : feature group;
 		AGV_ARRs : feature group;
+		require_amc : requires bus access;
+		require_arr : requires bus access;
+		
 	flows
 		AMCtoARR : flow path AGV_AMC -> AGV_ARRs;
 		ARRtoAMC : flow path AGV_ARRs -> AGV_AMC;
@@ -25,7 +28,7 @@ features
 
 	system implementation AGVs.impl
 	subcomponents
-		AGV_GPS : device devices::GPS.impl;
+		GPS : device devices::GPS.impl;
 
 	AGV_mission_processing : system AGV_subsystems::mission_processing.impl;
 	radar : device devices::Sensor.Radar;
@@ -44,8 +47,9 @@ features
 		system_bus : bus buses::device_bus.agv;
 	    media : bus buses::media_bus.agv;
 		power_bus : bus buses::power_bus.agv;
+		space_hoder : data;
 	connections
-		position : port AGV_GPS.position_info -> AGV_mission_processing.GPS_in;
+		position : port GPS.position_info -> AGV_mission_processing.GPS_in;
 		new_connection6 : port radar.data_out -> AGV_mission_processing.radar_in;
 		new_connection7 : port battery.battery_info -> AGV_mission_processing.battery_in;
 	new_connection8 : port motor.feedback_out -> AGV_mission_processing.motor_feedback;
@@ -71,12 +75,47 @@ features
 		new_connection22 : port camera.data_out -> AGV_mission_processing.camera_in;
 		new_connection23 : port microphone.data_out -> AGV_mission_processing.microphone_in;
 		new_connection24 : port backup_battery.battery_info -> AGV_mission_processing.battery_backup;
-
-	end AGVs.impl;
+	new_connection25 : bus access door.power_bus -> power_bus;
+	new_connection26 : bus access door.data_bus_require -> system_bus;
+	new_connection27 : bus access motor.power_bus -> power_bus;
+	new_connection28 : bus access AGV_ARR.power_bus -> power_bus;
+	new_connection29 : bus access ACM_AGV.power_bus -> power_bus;
+	new_connection30 : bus access radar.power_bus -> power_bus;
+		new_connection31 : bus access GPS.power_bus -> power_bus;
+		new_connection32 : bus access weight.power_bus -> power_bus;
+		new_connection33 : bus access disk.power_bus -> power_bus;
+		new_connection34 : bus access microphone.power_bus -> power_bus;
+		new_connection35 : bus access camera.power_bus -> power_bus;
+		new_connection36 : bus access motor.data_bus_require -> system_bus;
+		new_connection37 : bus access camera.data_bus -> media;
+		new_connection38 : bus access microphone.data_bus -> media;
+		new_connection39 : bus access disk.data_bus -> media;
+		new_connection40 : bus access weight.data_bus -> system_bus;
+		new_connection41 : bus access battery.data_bus -> system_bus;
+		new_connection42 : bus access backup_battery.data_bus -> system_bus;
+		new_connection43 : bus access ACM_AGV.media_bus_require -> media;
+		new_connection44 : bus access AGV_ARR.media_bus_require -> media;
+		new_connection45 : bus access AGV_ARR.data_bus_require -> system_bus;
+		new_connection46 : bus access ACM_AGV.data_bus_require -> system_bus;
+		new_connection47 : bus access radar.data_bus -> system_bus;
+	new_connection48 : bus access GPS.data_bus -> system_bus;
+	
+	properties
+	SEI::PowerBudget =>  30.0 W applies to GPS.power_bus;
+	SEI::PowerBudget =>  20.0 W applies to ACM_AGV.power_bus;
+	SEI::PowerBudget =>  20.0 W applies to AGV_ARR.power_bus;
+	SEI::PowerBudget =>  40.0 W applies to camera.power_bus;
+	SEI::PowerBudget =>  40.0 W applies to microphone.power_bus;
+	SEI::PowerBudget =>  30.0 W applies to radar.power_bus;
+	SEI::PowerBudget =>  60.0 W applies to motor.power_bus;
+	SEI::PowerBudget =>  20.0 W applies to door.power_bus;
+	SEI::PowerCapacity =>  100.0 W applies to power_bus;
+end AGVs.impl;
 
 	system ARRs_Ground
 	features
 		ARR_AGV : feature group;
+		require : requires bus access;
 	flows
 		ARR_result_sources : flow sink ARR_AGV;
 	end ARRs_Ground;
@@ -99,19 +138,18 @@ features
 
 		battery : device devices::battery.impl;
 		arm : device devices::Controller.arm;
-		motor : device devices::Controller.motor {
-			SEI::NetWeight => 12.0 kg;
-		};
+		motor : device devices::Controller.motor;
 		transceiver : device devices::Transceiver_collect.impl;
 	radar : device devices::Sensor.Radar;
 	disk : device devices::Disk.impl;
 		battery_backup : device devices::battery.backup;
-		system_bus : bus buses::device_bus.agv;
-	    media : bus buses::media_bus.agv;
-		power_bus : bus buses::power_bus.agv;
+		system_bus : bus buses::device_bus.arr;
+	    media : bus buses::media_bus.arr;
+		power_bus : bus buses::power_bus.arr;
 		weight : device devices::Sensor.weight;
-	connections
-		new_connection11 : port GPS.position_info -> mission_processing.GPS_in;
+	space_holder : data;
+connections
+	new_connection11 : port GPS.position_info -> mission_processing.GPS_in;
 		battery_info : port battery.battery_info -> mission_processing.battery_in;
 		new_connection5 : port mission_processing.motor_signal -> motor.control_in;
 		new_connection6 : port motor.feedback_out -> mission_processing.motor_feedback;
@@ -130,7 +168,38 @@ features
 		new_connection16 : port mission_processing.disk_out -> disk.data_in;
 		new_connection17 : port battery_backup.battery_info -> mission_processing.battery_backup;
 		new_connection18 : port weight.data_out -> mission_processing.weight_in;
-	end ARRs_Ground.impl;
+
+	new_connection27 : bus access motor.power_bus -> power_bus;
+	new_connection30 : bus access radar.power_bus -> power_bus;
+		new_connection31 : bus access transceiver.power_bus -> power_bus;
+		new_connection32 : bus access weight.power_bus -> power_bus;
+		new_connection33 : bus access disk.power_bus -> power_bus;
+		new_connection34 : bus access microphone.power_bus -> power_bus;
+		new_connection35 : bus access camera.power_bus -> power_bus;
+		new_connection36 : bus access motor.data_bus_require -> system_bus;
+		new_connection37 : bus access camera.data_bus -> media;
+		new_connection38 : bus access microphone.data_bus -> media;
+		new_connection39 : bus access disk.data_bus -> media;
+		new_connection40 : bus access weight.data_bus -> system_bus;
+		new_connection41 : bus access battery.data_bus -> system_bus;
+		new_connection47 : bus access radar.data_bus -> system_bus;
+	new_connection19 : bus access transceiver.media_bus_require -> media;
+	new_connection20 : bus access transceiver.data_bus_require -> system_bus;
+	new_connection21 : bus access battery_backup.data_bus -> system_bus;
+	new_connection23 : bus access arm.power_bus -> power_bus;
+	new_connection24 : bus access arm.data_bus_require -> system_bus;
+	new_connection22 : bus access GPS.power_bus -> power_bus;
+	new_connection25 : bus access GPS.data_bus -> system_bus;
+	properties
+	SEI::PowerBudget =>  30.0 W applies to GPS.power_bus;
+	SEI::PowerBudget =>  20.0 W applies to transceiver.power_bus;
+	SEI::PowerBudget =>  40.0 W applies to camera.power_bus;
+	SEI::PowerBudget =>  40.0 W applies to microphone.power_bus;
+	SEI::PowerBudget =>  30.0 W applies to radar.power_bus;
+	SEI::PowerBudget =>  60.0 W applies to motor.power_bus;
+	SEI::PowerBudget =>  20.0 W applies to arm.power_bus;
+	SEI::PowerCapacity =>  100.0 W applies to power_bus;
+end ARRs_Ground.impl;
 	system implementation AACs.impl
 	end AACs.impl;
 
@@ -142,6 +211,7 @@ features
 		AMC_AGVs : feature group;
 		AMC_AAVs : feature group;
 		AMC_AACs : feature group;
+		require_agv : requires bus access;
 	flows
 		mission_sources : flow source AMC_AGVs;
 		results : flow path AMC_AGVs -> display_out;
@@ -178,9 +248,9 @@ end AMC.impl;
 		AMC_System : system AMC.impl;
 		AGV_System_001 : system AGVs.impl;
 		ARR_Ground_System_001 : system ARRs_Ground.impl;
-		AMC_Wireless_Network : bus;
-		AGV_Wireless_Network : bus;
-	AAV_System_001 : system AAVs.fixedWing;
+		amc_agv : bus buses::network.amc;
+		agv_arr : bus buses::network.agv;
+		AAV_System_001 : system AAVs.fixedWing;
 	AAV_System_002 : system AAVs.rotaryWing;
 	ACC_System_001 : system AACs.impl;
 	ARR_Amphibious_System_001 : system ARRs_Amphibious.impl;
@@ -200,6 +270,10 @@ connections
 	new_connection10 : feature group ACC_System_001.AAC_AMC -> AMC_System.AMC_AACs;
 	new_connection11 : feature group ACC_System_001.AAC_ARRs -> ARR_Amphibious_System_001.ARR_AAC;
 	new_connection12 : feature group ARR_Amphibious_System_001.ARR_AAC -> ACC_System_001.AAC_ARRs;
+	new_connection13 : bus access AMC_System.require_agv -> amc_agv;
+	new_connection15 : bus access amc_agv -> AGV_System_001.require_amc;
+	new_connection14 : bus access AGV_System_001.require_arr -> agv_arr;
+	new_connection16 : bus access ARR_Ground_System_001.require -> agv_arr;
 flows
 	main :
 	end to
