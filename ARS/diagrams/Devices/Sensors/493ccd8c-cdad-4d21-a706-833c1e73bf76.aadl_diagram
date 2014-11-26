@@ -147,12 +147,12 @@
         <properties key="name" value="feature"/>
         <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="20" height="20" y="14">
           <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" width="20" height="20" style="//@styles.1">
-            <points x="20"/>
-            <points x="5"/>
-            <points y="10"/>
-            <points x="5" y="20"/>
-            <points x="20" y="20"/>
-            <points x="20"/>
+            <points/>
+            <points x="15"/>
+            <points x="20" y="10"/>
+            <points x="15" y="20"/>
+            <points y="20"/>
+            <points/>
           </graphicsAlgorithmChildren>
         </graphicsAlgorithm>
       </children>
