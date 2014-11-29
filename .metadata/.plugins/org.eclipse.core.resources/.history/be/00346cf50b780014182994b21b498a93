@@ -66,7 +66,7 @@
       <points x="196" y="50"/>
       <points y="50"/>
     </graphicsAlgorithm>
-    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.1 //@connections.23">
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.1 //@connections.24">
       <properties key="name" value="chopbox"/>
     </anchors>
     <children visible="true">
@@ -462,7 +462,7 @@
       <points x="148" y="50"/>
       <points y="50"/>
     </graphicsAlgorithm>
-    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.11 //@connections.24">
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.11 //@connections.23">
       <properties key="name" value="chopbox"/>
     </anchors>
     <children visible="true">
@@ -687,6 +687,24 @@
     </children>
   </children>
   <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier threads::state_record_decision.impl2"/>
+    <properties key="is_layed_out" value="true"/>
+    <properties key="is_ghost" value="false"/>
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="207" height="50" x="1770" y="310" style="//@styles.0/@styles.0/@styles.0">
+      <points x="20"/>
+      <points x="207"/>
+      <points x="187" y="50"/>
+      <points y="50"/>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.23">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier threads::state_record_decision.impl2"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="207" height="50" style="//@styles.1" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="state_record_decision.impl2"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
     <properties key="is_layed_out" value="true"/>
     <properties key="independentObject" value="classifier threads::mission_queue_management.avg"/>
     <properties key="is_ghost" value="false"/>
@@ -696,7 +714,7 @@
       <points x="223" y="50"/>
       <points y="50"/>
     </graphicsAlgorithm>
-    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.23">
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.24">
       <properties key="name" value="chopbox"/>
     </anchors>
     <children visible="true">
@@ -705,39 +723,20 @@
     </children>
   </children>
   <children xsi:type="pi:ContainerShape" visible="true" active="true">
-    <properties key="independentObject" value="classifier threads::state_record_decision.avg"/>
+    <properties key="independentObject" value="classifier threads::mission_forward.impl2"/>
     <properties key="is_layed_out" value="true"/>
-    <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="195" height="50" x="1780" y="350" style="//@styles.0/@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="173" height="50" x="1530" y="670" style="//@styles.0/@styles.0/@styles.0">
       <points x="20"/>
-      <points x="195"/>
-      <points x="175" y="50"/>
-      <points y="50"/>
-    </graphicsAlgorithm>
-    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.24">
-      <properties key="name" value="chopbox"/>
-    </anchors>
-    <children visible="true">
-      <properties key="independentObject" value="classifier threads::state_record_decision.avg"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="195" height="50" style="//@styles.1" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="state_record_decision.avg"/>
-    </children>
-  </children>
-  <children xsi:type="pi:ContainerShape" visible="true" active="true">
-    <properties key="independentObject" value="classifier threads::mission_forward.avg"/>
-    <properties key="is_layed_out" value="true"/>
-    <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="161" height="50" x="1480" y="650" style="//@styles.0/@styles.0/@styles.0">
-      <points x="20"/>
-      <points x="161"/>
-      <points x="141" y="50"/>
+      <points x="173"/>
+      <points x="153" y="50"/>
       <points y="50"/>
     </graphicsAlgorithm>
     <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.25">
       <properties key="name" value="chopbox"/>
     </anchors>
     <children visible="true">
-      <properties key="independentObject" value="classifier threads::mission_forward.avg"/>
-      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="161" height="50" style="//@styles.1" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="mission_forward.avg"/>
+      <properties key="independentObject" value="classifier threads::mission_forward.impl2"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="173" height="50" style="//@styles.1" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="mission_forward.impl2"/>
     </children>
   </children>
   <styles background="//@colors.1" foreground="//@colors.2" lineWidth="1" lineVisible="true" transparency="0.0" id="classifier" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
@@ -1024,7 +1023,19 @@
       </graphicsAlgorithm>
     </connectionDecorators>
   </connections>
-  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.3/@anchors.0" end="//@children.38/@anchors.0">
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.25/@anchors.0" end="//@children.38/@anchors.0">
+    <properties key="independentObject" value="realization threads::state_record_decision.impl2"/>
+    <properties key="is_ghost" value="false"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
+    <connectionDecorators visible="true" locationRelative="true">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.3/@anchors.0" end="//@children.39/@anchors.0">
     <properties key="independentObject" value="realization threads::mission_queue_management.avg"/>
     <properties key="is_ghost" value="false"/>
     <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
@@ -1036,21 +1047,8 @@
       </graphicsAlgorithm>
     </connectionDecorators>
   </connections>
-  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.25/@anchors.0" end="//@children.39/@anchors.0">
-    <properties key="independentObject" value="realization threads::state_record_decision.avg"/>
-    <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
-    <connectionDecorators visible="true" locationRelative="true">
-      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
-        <points x="-15" y="10"/>
-        <points/>
-        <points x="-15" y="-10"/>
-      </graphicsAlgorithm>
-    </connectionDecorators>
-  </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.18/@anchors.0" end="//@children.40/@anchors.0">
-    <properties key="independentObject" value="realization threads::mission_forward.avg"/>
-    <properties key="is_ghost" value="false"/>
+    <properties key="independentObject" value="realization threads::mission_forward.impl2"/>
     <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
     <connectionDecorators visible="true" locationRelative="true">
       <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
