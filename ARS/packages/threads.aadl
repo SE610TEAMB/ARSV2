@@ -82,10 +82,10 @@ flows
 	new_flow_spec : flow path data_in -> data_out;
 end sensor_weight;
 
-	thread implementation sensor_weight.impl
+	thread implementation sensor_weight.avg
 connections
 	new_connection : port data_in -> data_out;
-end sensor_weight.impl;
+end sensor_weight.avg;
 
 	thread sensor_radar
 	features
@@ -251,5 +251,38 @@ end navigation_drive;
 
 	thread implementation navigation_drive.impl
 	end navigation_drive.impl;
+
+	thread implementation sensor_radar.avg
+	end sensor_radar.avg;
+
+	thread implementation navigation_drive.avg
+	end navigation_drive.avg;
+
+	thread implementation mission_receive.avg
+	end mission_receive.avg;
+
+	thread implementation control_operation.avg
+	end control_operation.avg;
+
+	thread implementation state_compile.avg
+	end state_compile.avg;
+
+	thread implementation control_navigation.avg
+	end control_navigation.avg;
+
+	thread implementation control_identification.avg
+	end control_identification.avg;
+
+	thread implementation navigation_calculate.avg
+	end navigation_calculate.avg;
+
+	thread implementation state_record_decision.impl2
+	end state_record_decision.impl2;
+
+	thread implementation mission_queue_management.avg
+	end mission_queue_management.avg;
+
+	thread implementation mission_forward.impl2
+	end mission_forward.impl2;
 
 end threads;

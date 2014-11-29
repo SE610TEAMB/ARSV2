@@ -376,7 +376,7 @@ connections
 
 	process implementation sensor_handler.weight
 subcomponents
-	weight : thread threads::sensor_weight.impl;
+	weight : thread threads::sensor_weight.avg;
 connections
 	new_connection : port sensor_data -> weight.data_in;
 	new_connection2 : port weight.data_out -> data_out;

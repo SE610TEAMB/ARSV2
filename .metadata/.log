@@ -608,3 +608,447 @@ Created Time: 2014-11-25 18:16:37.484
 
 !ENTRY org.osate.ge 1 0 2014-11-25 22:35:02.384
 !MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram synchronously - current thread is the display thread
+!SESSION 2014-11-29 09:39:06.199 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  --launcher.XXPermSize 128M
+Command-line arguments:  -data C:\Users\christophe\Documents\GitHub\ARSV2 -os win32 -ws win32 -arch x86_64 --launcher.XXPermSize 128M
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:51:20.336
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@77988c45 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: devices::Sensor.weight, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:51:28.488
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@1248f83 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: devices::Transceiver_collect, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:51:34.235
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@16257f8c (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: memories, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:51:51.227
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@4e3c0627 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::mission_result_mixer, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:51:52.539
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@50b78155 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::mission_controller_agv.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:51:57.405
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@f776b4a (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::actuator_handler.arm, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:51:59.134
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@12921ee1 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::target_operation.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:52:00.635
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@486d1868 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::target_identification.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:52:01.759
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@690113f0 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::mission_controller_arr.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.eclipse.emf.workspace 2 0 2014-11-29 10:53:02.935
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:472)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:363)
+	at org.eclipse.swt.widgets.ToolBar.getItemCount(ToolBar.java:556)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:245)
+	at org.osate.ge.ui.editor.AgeDiagramBehavior$4.refresh(AgeDiagramBehavior.java:158)
+	at org.eclipse.graphiti.ui.editor.DiagramBehavior.refresh(DiagramBehavior.java:774)
+	at org.eclipse.graphiti.ui.editor.DiagramBehavior.refreshContent(DiagramBehavior.java:808)
+	at org.eclipse.graphiti.ui.internal.editor.DomainModelWorkspaceSynchronizerDelegate.handleResourceMoved(DomainModelWorkspaceSynchronizerDelegate.java:81)
+	at org.eclipse.emf.workspace.util.MovedSynchRequest.doPerform(MovedSynchRequest.java:46)
+	at org.eclipse.emf.workspace.util.SynchRequest$1.run(SynchRequest.java:58)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl.runExclusive(TransactionalEditingDomainImpl.java:328)
+	at org.eclipse.emf.workspace.util.SynchRequest.perform(SynchRequest.java:56)
+	at org.eclipse.emf.workspace.util.WorkspaceSynchronizer$ResourceSynchJob.runInWorkspace(WorkspaceSynchronizer.java:633)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:53:15.783
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram synchronously - current thread is the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:53:15.784
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram synchronously - current thread is the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:56:37.312
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@d4594a8 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: systems::AGVs, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:56:42.062
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@62cad0e8 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: AGV_subsystems::mission_processing.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:57:23.263
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@1500416c (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: ARR_subsystems::mission_processing.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:57:28.560
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@1f122cbb (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: systems::ARRs_Ground.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:57:43.102
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@1c0c5835 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: ARR_subsystems::mission_processing, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:58:25.224
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.openOrCreateDiagramForRootBusinessObject(): Existing diagram found. Opening...
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:58:25.247
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@5122088e (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::sensor_handler.radar, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:58:56.550
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@6f10b857 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: systems::AGVs.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:59:03.031
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@18221338 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: threads::sensor_GPS, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 10:59:38.488
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:00:40.027
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:00:40.035
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: sensor_radar.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:00:41.570
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:00:48.807
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:00:49.770
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:00:50.211
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:09.687
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:09.696
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: navigation_drive.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:09.910
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:29.264
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:29.934
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:30.283
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:32.313
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.openOrCreateDiagramForRootBusinessObject(): Existing diagram not found.
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:32.314
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.createNewDiagram(): Creating diagram of type 'AADL Component Implementation' for model element 'navigation_drive.impl'
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:32.315
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.createNewDiagram(): Creating a editing domain
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:32.341
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@14ea2f24 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::navigation_drive.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:38.194
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.openOrCreateDiagramForRootBusinessObject(): Existing diagram found. Opening...
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:38.207
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@376de4f8 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: threads::navigation_drive, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:44.049
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.openOrCreateDiagramForRootBusinessObject(): Existing diagram found. Opening...
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:01:44.062
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@7a852734 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::navigation_drive.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.eclipse.ui.views.properties.tabbed 4 4 2014-11-29 11:01:56.455
+!MESSAGE Contributor org.osate.ge.editor.AgeDiagramEditor cannot be created.
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:02:34.719
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:02:34.724
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: mission_receive.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:02:34.898
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:02:41.849
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:02:42.419
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:02:42.720
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:06.065
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:06.071
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: control_operation.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:06.275
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:09.468
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.openOrCreateDiagramForRootBusinessObject(): Existing diagram not found.
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:09.469
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.createNewDiagram(): Creating diagram of type 'AADL Component Implementation' for model element 'control_operation.impl2'
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:09.470
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.createNewDiagram(): Creating a editing domain
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:09.493
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@5acffe6 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::control_operation.impl2, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:20.963
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:21.476
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:21.810
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramModificationService$DefaultModification.updateDiagram(): Creating an editing domain
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:21.824
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@14d235d0 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::control_operation.impl2, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:03:21.903
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:04:14.879
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:04:14.884
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: state_compile.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:04:15.070
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:04:33.705
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:04:33.709
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: control_navigation.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:04:33.835
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:05:20.484
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:05:20.487
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: control_identification.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:05:20.627
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:05:54.270
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:05:54.277
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: navigation_calculate.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:05:54.397
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:23.574
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:23.991
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:24.311
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:31.145
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.openOrCreateDiagramForRootBusinessObject(): Existing diagram not found.
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:31.146
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.createNewDiagram(): Creating diagram of type 'AADL Component Implementation' for model element 'control_identification.impl2'
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:31.147
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.createNewDiagram(): Creating a editing domain
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:31.170
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@5ce2ec58 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::control_identification.impl2, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:40.458
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:40.891
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:41.173
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:41.327
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramModificationService$DefaultModification.updateDiagram(): Creating an editing domain
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:41.374
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@7e8f377 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::control_identification.impl2, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:52.410
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:52.925
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:06:53.188
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:07:03.028
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:07:03.476
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:07:03.728
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:07:27.076
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:07:27.642
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:07:27.947
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:09.902
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:09.907
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: state_record_decision.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:10.032
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:44.540
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:44.544
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: mission_queue_management.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:44.645
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:48.339
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.openOrCreateDiagramForRootBusinessObject(): Existing diagram not found.
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:48.340
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.createNewDiagram(): Creating diagram of type 'AADL Component Implementation' for model element 'mission_queue_management.impl2'
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:48.341
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramService.createNewDiagram(): Creating a editing domain
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:48.368
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@69ccf25 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::mission_queue_management.impl2, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:08:59.934
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:09:00.398
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:09:00.630
+!MESSAGE org.osate.ge.services.impl.DefaultDiagramModificationService$DefaultModification.updateDiagram(): Creating an editing domain
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:09:00.652
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@79c1f176 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::mission_queue_management.impl2, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:09:00.685
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:09:24.645
+!MESSAGE org.osate.ge.services.impl.DefaultAadlModificationService.modify(): Executing modification without a thread switch
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:09:24.649
+!MESSAGE org.osate.ge.diagrams.pkg.patterns.PackageClassifierPattern.createClassifier(): Created classifier with name: mission_forward.impl2
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:09:24.745
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@21d53cfd (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: threads, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:11:13.331
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@e2b57d8 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: memories::system_memory.arr, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:11:16.198
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@4bbe7fa1 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: threads::control_operation.avg, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:11:26.139
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@4103e3a0 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processors::system_processor.arr, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:11:39.061
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@16eb577 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: processors, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:12:26.977
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram synchronously - current thread is the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:12:45.912
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram synchronously - current thread is the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:12:47.025
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram asynchronously - current thread is not the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:12:53.540
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram synchronously - current thread is the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:12:53.713
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram synchronously - current thread is the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:12:54.386
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram asynchronously - current thread is not the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:13:42.145
+!MESSAGE org.osate.ge.ui.editor.AgeDiagramBehavior.update(): Updating diagram synchronously - current thread is the display thread
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:13:42.147
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@5122088e (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::sensor_handler.radar, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:13:43.889
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@54ac9f35 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::actuator_handler.motor, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:13:46.164
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@2c568c26 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::state_result_handler.impl, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:13:47.787
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@b8e7b48 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::sensor_handler.GPS, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:13.088
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@24d01fdb (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::mission_handler, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:14.466
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@4c0e7d3f (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::system_controller, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:15.458
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@3ba8d8c1 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::mission_result_handler, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:16.377
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@1c211640 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::actuator_handler, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:17.399
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@29e2a649 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::sensor_handler, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:18.610
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@5db5cc9d (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::disk_handler, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:19.447
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@1dcfc7c3 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::battery_handler, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:20.258
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@1ede84ae (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::media_handler, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:21.714
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@4a39509f (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::navigation, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:14:43.935
+!MESSAGE org.osate.ge.diagrams.componentImplementation.features.ComponentImplementationUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@440ef4a6 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Component Implementation, name: processes::sensor_handler.weight, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:15:15.605
+!MESSAGE org.osate.ge.diagrams.type.features.TypeUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@710f899d (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Type, name: processes::mission_result_mixer, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
+
+!ENTRY org.osate.ge 1 0 2014-11-29 11:28:54.010
+!MESSAGE org.osate.ge.diagrams.pkg.features.PackageUpdateDiagramFeature.update(): called with context: UpdateContext pictogramElement: org.eclipse.graphiti.mm.pictograms.impl.DiagramImpl@5c55e757 (visible: true, active: false) (gridUnit: 10, diagramTypeId: AADL Package, name: processes, snapToGrid: true, showGuides: false, verticalGridUnit: -1, version: 0.10.0)
