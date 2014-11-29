@@ -9,5 +9,10 @@
 1416956553221	Delete resource 'ARS/instances/systems_ARRs_Ground_impl_Instance.aaxl2'
 1416957484151	Delete resource 'ARS/instances/systems_ARRs_Ground_impl_Instance.aaxl2'
 1416958021435	Delete resource 'ARS/instances/systems_ARRs_Ground_impl_Instance.aaxl2'
+<<<<<<< HEAD
 1417276516445	Delete 2 resources
 1417276558267	Delete resource 'ARS/diagrams/Processes/AGV/Tyoe'
+=======
+1417271581130	Delete resource 'ARS/instances/ARR_subsystems_mission_processing_impl_Instance.aaxl2'
+1417271583865	Delete resource 'ARS/instances/systems_ARRs_Ground_impl_Instance.aaxl2'
+>>>>>>> 4032c907cf441c12c176b92794a6bda716eca80c
