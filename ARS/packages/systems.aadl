@@ -75,30 +75,31 @@ features
 		new_connection22 : port camera.data_out -> AGV_mission_processing.camera_in;
 		new_connection23 : port microphone.data_out -> AGV_mission_processing.microphone_in;
 		new_connection24 : port backup_battery.battery_info -> AGV_mission_processing.battery_backup;
-	new_connection25 : bus access door.power_bus -> power_bus;
-	new_connection26 : bus access door.data_bus_require -> system_bus;
-	new_connection27 : bus access motor.power_bus -> power_bus;
-	new_connection28 : bus access AGV_ARR.power_bus -> power_bus;
-	new_connection29 : bus access ACM_AGV.power_bus -> power_bus;
-	new_connection30 : bus access radar.power_bus -> power_bus;
-		new_connection31 : bus access GPS.power_bus -> power_bus;
-		new_connection32 : bus access weight.power_bus -> power_bus;
-		new_connection33 : bus access disk.power_bus -> power_bus;
-		new_connection34 : bus access microphone.power_bus -> power_bus;
-		new_connection35 : bus access camera.power_bus -> power_bus;
-		new_connection36 : bus access motor.data_bus_require -> system_bus;
-		new_connection37 : bus access camera.data_bus -> media;
-		new_connection38 : bus access microphone.data_bus -> media;
-		new_connection39 : bus access disk.data_bus -> media;
-		new_connection40 : bus access weight.data_bus -> system_bus;
-		new_connection41 : bus access battery.data_bus -> system_bus;
-		new_connection42 : bus access backup_battery.data_bus -> system_bus;
-		new_connection43 : bus access ACM_AGV.media_bus_require -> media;
-		new_connection44 : bus access AGV_ARR.media_bus_require -> media;
-		new_connection45 : bus access AGV_ARR.data_bus_require -> system_bus;
-		new_connection46 : bus access ACM_AGV.data_bus_require -> system_bus;
-		new_connection47 : bus access radar.data_bus -> system_bus;
-	new_connection48 : bus access GPS.data_bus -> system_bus;
+		
+	new_connection25 : bus access power_bus -> door.power_bus;
+	new_connection26 : bus access system_bus -> door.data_bus_require;
+	new_connection27 : bus access power_bus -> motor.power_bus;
+	new_connection28 : bus access power_bus -> AGV_ARR.power_bus;
+	new_connection29 : bus access power_bus -> ACM_AGV.power_bus;
+	new_connection30 : bus access power_bus -> radar.power_bus;
+		new_connection31 : bus access power_bus -> GPS.power_bus;
+		new_connection32 : bus access power_bus -> weight.power_bus;
+		new_connection33 : bus access power_bus -> disk.power_bus;
+		new_connection34 : bus access power_bus -> microphone.power_bus;
+		new_connection35 : bus access power_bus -> camera.power_bus;
+		new_connection36 : bus access system_bus -> motor.data_bus_require;
+		new_connection37 : bus access media -> camera.data_bus;
+		new_connection38 : bus access media -> microphone.data_bus;
+		new_connection39 : bus access media -> disk.data_bus;
+		new_connection40 : bus access system_bus -> weight.data_bus;
+		new_connection41 : bus access system_bus -> battery.data_bus;
+		new_connection42 : bus access system_bus -> backup_battery.data_bus;
+		new_connection43 : bus access media -> ACM_AGV.media_bus_require;
+		new_connection44 : bus access media -> AGV_ARR.media_bus_require;
+		new_connection45 : bus access system_bus -> AGV_ARR.data_bus_require;
+		new_connection46 : bus access system_bus -> ACM_AGV.data_bus_require;
+		new_connection47 : bus access system_bus -> radar.data_bus;
+	new_connection48 : bus access system_bus -> GPS.data_bus;
 	
 	properties
 	SEI::PowerBudget =>  30.0 W applies to GPS.power_bus;
@@ -169,27 +170,29 @@ connections
 		new_connection17 : port battery_backup.battery_info -> mission_processing.battery_backup;
 		new_connection18 : port weight.data_out -> mission_processing.weight_in;
 
-	new_connection27 : bus access motor.power_bus -> power_bus;
-	new_connection30 : bus access radar.power_bus -> power_bus;
-		new_connection31 : bus access transceiver.power_bus -> power_bus;
-		new_connection32 : bus access weight.power_bus -> power_bus;
-		new_connection33 : bus access disk.power_bus -> power_bus;
+	new_connection27 : bus access power_bus -> motor.power_bus;
+	new_connection30 : bus access power_bus -> radar.power_bus;
+		new_connection31 : bus access power_bus -> transceiver.power_bus;
+		new_connection32 : bus access power_bus -> weight.power_bus;
+		new_connection33 : bus access power_bus -> disk.power_bus;
+		
 		new_connection34 : bus access power_bus -> microphone.power_bus;
-		new_connection35 : bus access camera.power_bus -> power_bus;
-		new_connection36 : bus access motor.data_bus_require -> system_bus;
-		new_connection37 : bus access camera.data_bus -> media;
-		new_connection38 : bus access microphone.data_bus -> media;
-		new_connection39 : bus access disk.data_bus -> media;
-		new_connection40 : bus access weight.data_bus -> system_bus;
-		new_connection41 : bus access battery.data_bus -> system_bus;
-		new_connection47 : bus access radar.data_bus -> system_bus;
-	new_connection19 : bus access transceiver.media_bus_require -> media;
-	new_connection20 : bus access transceiver.data_bus_require -> system_bus;
-	new_connection21 : bus access battery_backup.data_bus -> system_bus;
-	new_connection23 : bus access arm.power_bus -> power_bus;
-	new_connection24 : bus access arm.data_bus_require -> system_bus;
-	new_connection22 : bus access GPS.power_bus -> power_bus;
-	new_connection25 : bus access GPS.data_bus -> system_bus;
+		
+		new_connection35 : bus access power_bus -> camera.power_bus;
+		new_connection36 : bus access system_bus -> motor.data_bus_require;
+		new_connection37 : bus access media -> camera.data_bus;
+		new_connection38 : bus access media -> microphone.data_bus;
+		new_connection39 : bus access media -> disk.data_bus;
+		new_connection40 : bus access system_bus -> weight.data_bus;
+		new_connection41 : bus access system_bus -> battery.data_bus;
+		new_connection47 : bus access system_bus -> radar.data_bus;
+	new_connection19 : bus access media -> transceiver.media_bus_require;
+	new_connection20 : bus access system_bus -> transceiver.data_bus_require;
+	new_connection21 : bus access system_bus -> battery_backup.data_bus;
+	new_connection23 : bus access power_bus -> arm.power_bus;
+	new_connection24 : bus access system_bus -> arm.data_bus_require;
+	new_connection22 : bus access power_bus -> GPS.power_bus;
+	new_connection25 : bus access system_bus -> GPS.data_bus;
 	properties
 	SEI::PowerBudget =>  30.0 W applies to GPS.power_bus;
 	SEI::PowerBudget =>  20.0 W applies to transceiver.power_bus;
@@ -271,10 +274,10 @@ connections
 	new_connection10 : feature group ACC_System_001.AAC_AMC -> AMC_System.AMC_AACs;
 	new_connection11 : feature group ACC_System_001.AAC_ARRs -> ARR_Amphibious_System_001.ARR_AAC;
 	new_connection12 : feature group ARR_Amphibious_System_001.ARR_AAC -> ACC_System_001.AAC_ARRs;
-	new_connection13 : bus access AMC_System.require_agv -> amc_agv;
+	new_connection13 : bus access amc_agv -> AMC_System.require_agv;
 	new_connection15 : bus access amc_agv -> AGV_System_001.require_amc;
-	new_connection14 : bus access AGV_System_001.require_arr -> agv_arr;
-	new_connection16 : bus access ARR_Ground_System_001.require -> agv_arr;
+	new_connection14 : bus access agv_arr -> AGV_System_001.require_arr ;
+	new_connection16 : bus access agv_arr -> ARR_Ground_System_001.require ;
 flows
 	main :
 	end to
