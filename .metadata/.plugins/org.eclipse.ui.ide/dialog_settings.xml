@@ -30,13 +30,6 @@
 		<item value="org.osate.utils.feature:1.0.0.201407141638"/>
 		<item value="org.osate.xtext.aadl2.errormodel.feature:2.0.0.201407141638"/>
 	</list>
-	<section name="CleanDialogSettings">
-		<item value="662" key="DIALOG_WIDTH"/>
-		<item value="false" key="TOGGLE_SELECTED"/>
-		<item value="423" key="DIALOG_HEIGHT"/>
-		<item value="961" key="DIALOG_X_ORIGIN"/>
-		<item value="234" key="DIALOG_Y_ORIGIN"/>
-	</section>
 	<section name="ResourceNavigator">
 		<item value="" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
 		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>

@@ -231,8 +231,8 @@ end navigation.impl;
 	process implementation mission_controller_agv.impl
 	subcomponents
 			
-		navigation : thread threads::control_navigation.avg;
-		operation : thread threads::control_operation.avg;
+		navigation : thread threads::control_navigation.impl;
+		operation : thread threads::control_operation.impl;
 		new_subcomponent : data;
 	connections
 		new_connection : port mission_data -> navigation.mission_data;

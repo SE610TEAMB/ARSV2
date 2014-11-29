@@ -231,8 +231,8 @@ end navigation.impl;
 	process implementation mission_controller_agv.impl
 	subcomponents
 			
-		navigation : thread threads::control_navigation.avg;
-		operation : thread threads::control_operation.avg;
+		navigation : thread threads::control_navigation.impl;
+		operation : thread threads::control_operation.impl;
 		new_subcomponent : data;
 	connections
 		new_connection : port mission_data -> navigation.mission_data;
@@ -431,10 +431,10 @@ end target_identification;
 	
 	flows
 		new_flow_spec : flow sink mission_data_in;
-		new_flow_spec2 : flow sink arm_feedback;
-		new_flow_spec3 : flow source arm_cmd;
-		new_flow_spec4 : flow source operation_feedback;
-		new_flow_spec5 : flow sink operation_control;
+	new_flow_spec2 : flow sink arm_feedback;
+	new_flow_spec3 : flow source arm_cmd;
+	new_flow_spec4 : flow source operation_feedback;
+	new_flow_spec5 : flow sink operation_control;
 end target_operation;
 
 	process implementation target_operation.impl

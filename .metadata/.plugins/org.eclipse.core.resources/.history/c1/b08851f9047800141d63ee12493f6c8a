@@ -276,13 +276,13 @@ end navigation_drive;
 	thread implementation navigation_calculate.avg
 	end navigation_calculate.avg;
 
-	thread implementation state_record_decision.avg
-	end state_record_decision.avg;
+	thread implementation state_record_decision.impl2
+	end state_record_decision.impl2;
 
 	thread implementation mission_queue_management.avg
 	end mission_queue_management.avg;
 
-	thread implementation mission_forward.avg
-	end mission_forward.avg;
+	thread implementation mission_forward.impl2
+	end mission_forward.impl2;
 
 end threads;
