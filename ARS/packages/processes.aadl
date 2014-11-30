@@ -39,9 +39,11 @@ end sensor_handler.radar;
 	end mission_result_mixer;
 
 	process implementation mission_result_mixer.impl
+	subcomponents
+		new_subcomponent : thread;
 	end mission_result_mixer.impl;
-	
-   process state_result_mixer
+
+	process state_result_mixer
 	features
 		arr_results : in data port;
 		agv_results : in data port;
@@ -71,7 +73,7 @@ end sensor_handler.radar;
 	
 	process implementation mission_splitter.impl
 	end mission_splitter.impl;
-	
+
 	process battery_handler
 	features
 		main_in : in data port;
@@ -164,8 +166,10 @@ flows
 	end actuator_handler.door;
 
 	process implementation actuator_handler.motor
+	subcomponents
+		new_subcomponent2 : thread;
 	end actuator_handler.motor;
-	
+
 	process implementation actuator_handler.arm
 	end actuator_handler.arm;
 
@@ -230,10 +234,8 @@ end navigation.impl;
 
 	process implementation mission_controller_agv.impl
 	subcomponents
-			
 		navigation : thread threads::control_navigation.avg;
-		operation : thread threads::control_operation.avg;
-		new_subcomponent : data;
+		operation : thread threads::control_operation_agv.impl;
 	connections
 		new_connection : port mission_data -> navigation.mission_data;
 		new_connection2 : port mission_control -> navigation.mission_cotrol;
@@ -243,13 +245,14 @@ end navigation.impl;
 		new_connection8 : port navigation.navigation_control -> navigation_control;
 		new_connection13 : port navigation.mission_result -> mission_result;
 		new_connection15 : port operation.mission_result -> mission_result;
+		new_connection3 : port operation.door_command -> cmd_door;
+		new_connection4 : port door_feedback -> operation.door_feedback;
 	modes
 		nav : mode;
-		ide : mode;
 		ope : mode;
 		idle : initial mode;
 	end mission_controller_agv.impl;
-	
+
 	process mission_controller_arr
 	features
 		mission_data : in data port;
@@ -395,7 +398,7 @@ connections
 
 	process implementation sensor_handler.weight
 subcomponents
-	weight : thread threads::sensor_weight.avg;
+	weight : thread threads::sensor_weight.impl;
 connections
 	new_connection : port sensor_data -> weight.data_in;
 	new_connection2 : port weight.data_out -> data_out;

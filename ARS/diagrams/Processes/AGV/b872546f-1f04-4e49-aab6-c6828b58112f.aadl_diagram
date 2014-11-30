@@ -5,11 +5,11 @@
   <children xsi:type="pi:ContainerShape" visible="true" active="true">
     <properties key="independentObject" value="classifier processes::mission_controller_agv"/>
     <properties key="is_ghost" value="false"/>
-    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="300" height="396" x="50" y="20" style="//@styles.0/@styles.0">
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="300" height="325" x="50" y="20" style="//@styles.0/@styles.0">
       <points x="20"/>
       <points x="300"/>
-      <points x="280" y="396"/>
-      <points y="396"/>
+      <points x="280" y="325"/>
+      <points y="325"/>
     </graphicsAlgorithm>
     <children xsi:type="pi:ContainerShape" visible="true" active="true">
       <properties key="independentObject" value="feature processes::mission_controller_agv.mission_data"/>
